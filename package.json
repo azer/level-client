@@ -1,0 +1,26 @@
+{
+  "name": "level-client",
+  "version": "0.0.0",
+  "description": "Create and return LevelDB client if necessary, reuse if already given",
+  "main": "index.js",
+  "scripts": {
+    "test": "prova"
+  },
+  "devDependencies": {
+    "prova": "*"
+  },
+  "keywords": [
+    "level",
+    "client"
+  ],
+  "repository": {
+    "url": "git@github.com:azer/level-client.git",
+    "type": "git"
+  },
+  "author": "Azer Koçulu <azer@kodfabrik.com>",
+  "license": "BSD",
+  "dependencies": {
+    "levelup": "~0.18.2",
+    "leveldown": "~0.10.2"
+  }
+}
