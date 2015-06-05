@@ -1,6 +1,6 @@
 {
   "name": "level-client",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Create and return LevelDB client if necessary, reuse if already given",
   "main": "index.js",
   "scripts": {
