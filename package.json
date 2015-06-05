@@ -20,7 +20,7 @@
   "author": "Azer Koçulu <azer@kodfabrik.com>",
   "license": "BSD",
   "dependencies": {
-    "levelup": "~0.18.2",
-    "leveldown": "~0.10.2"
+    "leveldown": "^1.2.2",
+    "levelup": "^1.2.0"
   }
 }
