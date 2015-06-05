@@ -1,22 +1,23 @@
+var test = require('prova');
 var client = require("./");
 
-it('returns a LevelDB client', function(done){
+test('returns a LevelDB client', function (t) {
   var foo = client('data');
   var bar = client(foo);
   var qux = client(bar);
 
 
-  expect(foo).to.equal(bar);
-  expect(bar).to.equal(qux);
+  t.equal(foo, bar);
+  t.equal(bar, qux);
 
   foo.put('span', 'eggs', function (error) {
-    if (error) return done(error);
+    t.error(error);
 
     foo.get('span', function (error, value) {
-      if (error) return done(error);
+      t.error(error);
 
-      expect(value).to.equal('eggs');
-      done();
+      t.equal(value, 'eggs');
+      t.end();
     });
   });
 });
